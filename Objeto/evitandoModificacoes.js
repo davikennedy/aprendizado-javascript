@@ -11,6 +11,7 @@ delete produto.tag
 console.log(produto)
 
 
+
 // Object.seal -> Não permite inclusão e nem exclusão de novos atributos
 const pessoa = {nome: 'Juliana', idade: 35}
 Object.seal(pessoa)
@@ -22,12 +23,11 @@ delete pessoa.nome // Essa linha será ignorada, pois está tentando excluir um 
 pessoa.idade = 29
 console.log(pessoa)
 
+
+
 // Object.freeze = selado + valores Constantes -> Maneira de criar um objeto com impossibilidade de alterações
 const pessoaConstante = Object.freeze({nome: 'Maria Fernanda'})
 console.log(pessoaConstante)
 delete pessoaConstante.nome // Essa linha será ignorada, pois está tentando excluir um atributo de um objeto definido com 'freeze'
 pessoa.sobrenome = 'Amaral Rodrigues' // Essa linha será ignorada, pois está tentando adicionar um atributo a um objeto definido com 'freeze' 
 console.log(pessoaConstante)
-
-
-// git add . && git commit -m "Adicionando arquivo evitandoModificacoes.js"
