@@ -1,5 +1,5 @@
 /*
-O foreach serve para percorrer um arraywww
+O foreach serve para percorrer um array
 O foreach espera receber o valor alocado na posição e opcionalmente, o índice
 */
 
