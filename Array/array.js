@@ -21,5 +21,5 @@ console.log(aprovados[1])
 console.log(aprovados)
 
 aprovados = ['Bia', 'Carlos', 'Ana']
-aprovados.splice(1, 2, 'Elemento1', 'Elemento2') // Elimina 2 elementos a iniciando pelo índice 1. Após isso, adiciona os elementos informados. Caso não deseje eliminar algum elemento, bastaria informar '0' no segundo parâmetro
+aprovados.splice(1, 2, 'Elemento1', 'Elemento2') // Elimina 2 elementos iniciando pelo índice 1. Após isso, adiciona os elementos informados. Caso não deseja eliminar algum elemento, bastaria informar '0' no segundo parâmetro
 console.log(aprovados)
