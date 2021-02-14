@@ -1,4 +1,4 @@
-//Simulando o funcionamento do méetodo 'forEach'
+//Simulando o funcionamento do método 'forEach'
 Array.prototype.forEach2 = function(callback) {
     for (let i = 0; i < this.length; i++){
        callback(this[i], i, this)
