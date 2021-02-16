@@ -1,5 +1,6 @@
 /*
     O 'filter' serve para gerar um novo array a partir das condições estabelecidas
+    O array gerado pode ser menor ou do mesmo tamanho do array original, conforme as condições são atendidas
 */
 const produtos = [
     {nome: 'Notebook', preco: 2499, fragil: true},
