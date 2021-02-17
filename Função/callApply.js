@@ -16,8 +16,10 @@ console.log(produto.getPreco())
 
 const carro = {preco: 49990, desc: 0.20}
 
+// Call e Apply servem para chamar uma função, informando o seu contexto  
 console.log(getPreco.call(carro))
 console.log(getPreco.apply(carro))
 
+// A diferença entre Call e Apply está na maneira de informar os parâmetros  
 console.log(getPreco.call(carro, 0.17, '$'))
 console.log(getPreco.apply(carro, [0.17, '$']))
