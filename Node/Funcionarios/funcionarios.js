@@ -15,6 +15,5 @@ axios.get(url).then(response => {
         .filter(mulheres)
         .reduce(menorSalario)
 
-    console.log(funcionarios.filter(chineses).filter(mulheres).reduce(menorSalario))
-
+    console.log(resultado)
 })
