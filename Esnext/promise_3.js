@@ -1,8 +1,7 @@
+// Gera valores entre 1 e 100
 function gerarNumeroAleatorio(min, max) {
     if (min > max) {
-        let x = min
-        min = max
-        max = x
+        [min, max] = [max, min]
     }
 
     return new Promise(resolve => {
@@ -12,4 +11,4 @@ function gerarNumeroAleatorio(min, max) {
     })
 }
 
-gerarNumeroAleatorio(1, 60).then(console.log)
+gerarNumeroAleatorio(1, 100).then(console.log)
