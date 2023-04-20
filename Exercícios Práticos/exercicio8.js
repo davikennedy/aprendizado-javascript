@@ -9,16 +9,27 @@
         - Média acima de 7, aprovação
 */
 
-const nota1 = 5;
-const nota2 = 4;
-const nota3 = 4;
-
-const media = (nota1 + nota2 + nota3) / 3;
-
-if (media < 5) {
-    console.log(`Média: ${media.toFixed(2)}. Você está reprovado.`);
-} else if (media >= 5 && media < 7) {
-    console.log(`Média: ${media.toFixed(2)}. Você está de recuperação.`);
-} else {
-    console.log(`Média: ${media.toFixed(2)}. Você foi aprovado.`);
+function calcularMedia(nota1, nota2, nota3) {
+    return (nota1 + nota2 + nota3) / 3;
 }
+
+function obterClassificacao(media) {
+    if (media < 5) {
+        return (`Média: ${media.toFixed(2)}. Você está reprovado.`);
+    } else if (media >= 5 && media < 7) {
+        return (`Média: ${media.toFixed(2)}. Você está de recuperação.`);
+    } else {
+        return (`Média: ${media.toFixed(2)}. Você foi aprovado.`);
+    }
+}
+
+function main() {
+    let nota1 = 5;
+    let nota2 = 9;
+    let nota3 = 8;
+
+    let media = calcularMedia(nota1, nota2, nota3);
+    console.log(obterClassificacao(media));
+}
+
+main();
