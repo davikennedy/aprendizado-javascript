@@ -1,18 +1,24 @@
-function escreverMeuNome(nome) {
-    return (`Meu nome é ${nome}`);
+const escreverMeuNome = (nome = '') => `Meu nome é ${nome}`;
+
+const verificarMaioridade = (idade = 0) => {
+    if (typeof idade !== 'number') {
+        throw new Error('Idade deve ser um número');
+    }
+
+    return idade >= 18 ? 'Sou maior de idade' : 'Sou menor de idade';
 }
 
-function verificarMaioridade(idade) {
-    if (idade >= 18) {
-        return "Sou maior de idade";
-    } else {
-        return "Sou menor de idade"
+class Pessoa {
+    constructor(nome, idade) {
+        this.nome = nome;
+        this.idade = idade;
+    }
+
+    apresentacao() {
+        console.log(escreverMeuNome(this.nome));
+        console.log(verificarMaioridade(this.idade));
     }
 }
 
-function main() {
-    console.log(escreverMeuNome('Davi Kennedy'));
-    console.log(verificarMaioridade(28));
-}
-
-main();
+const pessoa = new Pessoa('Davi Kennedy', 28);
+pessoa.apresentacao();
