@@ -5,7 +5,7 @@ const verificarMaioridade = (idade = 0) => {
         throw new Error('Idade deve ser um número');
     }
 
-    return idade >= 18 ? 'Sou maior de idade' : 'Sou menor de idade';
+    return idade < 18 ? 'Sou menor de idade' : 'Sou maior de idade';
 }
 
 class Pessoa {
